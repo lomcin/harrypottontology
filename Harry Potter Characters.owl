@@ -1,0 +1,794 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-8 "http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#childOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-8;childOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-8;Person"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-8;parentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#parentOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-8;parentOf">
+        <rdfs:comment rdf:resource="&untitled-ontology-8;Lily_Evans_Potter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Half_Blood -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Half_Blood">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Magical_Person -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Magical_Person">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Person"/>
+        <owl:disjointWith rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Muggle -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Muggle">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Muggle_Born -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Muggle_Born">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Non_Magical -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Non_Magical">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Person -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Pure_Blood -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Pure_Blood">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Squib -->
+
+    <owl:Class rdf:about="&untitled-ontology-8;Squib">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Arthur_Weasley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Arthur_Weasley">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Draco_Malfoy -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Draco_Malfoy">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <childOf rdf:resource="&untitled-ontology-8;Lucius_Malfoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Harry_James_Potter -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Harry_James_Potter">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <childOf rdf:resource="&untitled-ontology-8;James_Potter"/>
+        <childOf rdf:resource="&untitled-ontology-8;Lily_Evans_Potter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Hermione_Granger -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Hermione_Granger">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <childOf rdf:resource="&untitled-ontology-8;Mr_Granger"/>
+        <childOf rdf:resource="&untitled-ontology-8;Mrs_Granger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#James_Potter -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;James_Potter">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Lily_Evans_Potter -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Lily_Evans_Potter">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Lilys_Dad -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Lilys_Dad">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Lily_Evans_Potter"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Petunia_Dursley"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Lilys_Mom -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Lilys_Mom">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Lily_Evans_Potter"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Petunia_Dursley"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Lord_Voldemort -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Lord_Voldemort">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <owl:sameAs rdf:resource="&untitled-ontology-8;Tom_Servollo_Riddle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Lucius_Malfoy -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Lucius_Malfoy">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Lune_Lovegood -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Lune_Lovegood">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Merope_Gaunt -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Merope_Gaunt">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Tom_Servollo_Riddle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Molly_Weasley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Molly_Weasley">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Mr_Granger -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Mr_Granger">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Mrs_Figg -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Mrs_Figg">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+        <childOf rdf:resource="&untitled-ontology-8;Mrs_Figg_Dad"/>
+        <childOf rdf:resource="&untitled-ontology-8;Mrs_Figg_Mom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Mrs_Figg_Dad -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Mrs_Figg_Dad">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Mrs_Figg_Mom -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Mrs_Figg_Mom">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Mrs_Granger -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Mrs_Granger">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Mrs_Lovegood -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Mrs_Lovegood">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Narcisa_Black_Malfoy -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Narcisa_Black_Malfoy">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Draco_Malfoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Petunia_Dursley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Petunia_Dursley">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Ronnald_Weasley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Ronnald_Weasley">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-8;Person"/>
+        <childOf rdf:resource="&untitled-ontology-8;Arthur_Weasley"/>
+        <childOf rdf:resource="&untitled-ontology-8;Molly_Weasley"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Servollo_Riddle -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Servollo_Riddle">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+        <parentOf rdf:resource="&untitled-ontology-8;Tom_Servollo_Riddle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Tom_Servollo_Riddle -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Tom_Servollo_Riddle">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Walter_Dursley -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Walter_Dursley">
+        <rdf:type rdf:resource="&untitled-ontology-8;Non_Magical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/8/untitled-ontology-8#Xenofilius_Lovegood -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-8;Xenofilius_Lovegood">
+        <rdf:type rdf:resource="&untitled-ontology-8;Magical_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#p1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#p2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#p3">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;parentOf"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;parentOf"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Squib"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;parentOf"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;parentOf"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Muggle"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Half_Blood"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;childOf"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;childOf"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;childOf"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;childOf"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Pure_Blood"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Muggle_Born"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;childOf"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-8;childOf"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-8;Non_Magical"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-8;Magical_Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
