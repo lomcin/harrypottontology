@@ -38,6 +38,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="&HarryPotterOntology;belongsTo"/>
+    
+
+
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#childOf -->
 
     <owl:ObjectProperty rdf:about="&HarryPotterOntology;childOf">
@@ -97,6 +103,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#DeathEater -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;DeathEater">
+        <rdfs:subClassOf rdf:resource="&HarryPotterOntology;Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Gryffindor -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;Gryffindor">
+        <rdfs:subClassOf rdf:resource="&HarryPotterOntology;House"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Half_Blood -->
 
     <owl:Class rdf:about="&HarryPotterOntology;Half_Blood">
@@ -108,6 +130,14 @@
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#House -->
 
     <owl:Class rdf:about="&HarryPotterOntology;House"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Hufflepuff -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;Hufflepuff">
+        <rdfs:subClassOf rdf:resource="&HarryPotterOntology;House"/>
+    </owl:Class>
     
 
 
@@ -144,9 +174,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Order -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;Order"/>
+    
+
+
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Person -->
 
     <owl:Class rdf:about="&HarryPotterOntology;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Phoenix -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;Phoenix">
+        <rdfs:subClassOf rdf:resource="&HarryPotterOntology;Order"/>
+    </owl:Class>
     
 
 
@@ -154,6 +198,22 @@
 
     <owl:Class rdf:about="&HarryPotterOntology;Pure_Blood">
         <rdfs:subClassOf rdf:resource="&HarryPotterOntology;Magical_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Ravenclaw -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;Ravenclaw">
+        <rdfs:subClassOf rdf:resource="&HarryPotterOntology;House"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Slytherin -->
+
+    <owl:Class rdf:about="&HarryPotterOntology;Slytherin">
+        <rdfs:subClassOf rdf:resource="&HarryPotterOntology;House"/>
     </owl:Class>
     
 
@@ -180,9 +240,32 @@
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Arthur_Weasley -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Arthur_Weasley">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Cedric_Diggory -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Cedric_Diggory">
+        <rdf:type rdf:resource="&HarryPotterOntology;Hufflepuff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Cho_Chang -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Cho_Chang">
+        <rdf:type rdf:resource="&HarryPotterOntology;Ravenclaw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#DeathEater -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;DeathEater"/>
     
 
 
@@ -191,16 +274,39 @@
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Draco_Malfoy">
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <rdf:type rdf:resource="&HarryPotterOntology;Slytherin"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;Lucius_Malfoy"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;Narcisa_Black_Malfoy"/>
     </owl:NamedIndividual>
     
 
 
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Filius_Flitwick -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Filius_Flitwick">
+        <rdf:type rdf:resource="&HarryPotterOntology;Ravenclaw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Gilderoy_Lockhart -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Gilderoy_Lockhart">
+        <rdf:type rdf:resource="&HarryPotterOntology;Ravenclaw"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Gryffindor -->
 
-    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Gryffindor">
-        <rdf:type rdf:resource="&HarryPotterOntology;House"/>
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Gryffindor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Hannah_Abbott -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Hannah_Abbott">
+        <rdf:type rdf:resource="&HarryPotterOntology;Hufflepuff"/>
     </owl:NamedIndividual>
     
 
@@ -208,8 +314,10 @@
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Harry_James_Potter -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Harry_James_Potter">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <HarryPotterOntology:belongsTo rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;James_Potter"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;Lily_Evans_Potter"/>
     </owl:NamedIndividual>
@@ -219,6 +327,7 @@
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Hermione_Granger -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Hermione_Granger">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;Mr_Granger"/>
@@ -229,17 +338,24 @@
 
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Hufflepuff -->
 
-    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Hufflepuff">
-        <rdf:type rdf:resource="&HarryPotterOntology;House"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Hufflepuff"/>
     
 
 
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#James_Potter -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;James_Potter">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Justin_Finch-Fletchley -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Justin_Finch-Fletchley">
+        <rdf:type rdf:resource="&HarryPotterOntology;Hufflepuff"/>
     </owl:NamedIndividual>
     
 
@@ -247,6 +363,7 @@
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Lily_Evans_Potter -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Lily_Evans_Potter">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;Lilys_Dad"/>
@@ -282,6 +399,7 @@
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Lord_Voldemort">
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <rdf:type rdf:resource="&HarryPotterOntology;Slytherin"/>
         <owl:sameAs rdf:resource="&HarryPotterOntology;Tom_Servollo_Riddle"/>
     </owl:NamedIndividual>
     
@@ -292,6 +410,7 @@
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Lucius_Malfoy">
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <rdf:type rdf:resource="&HarryPotterOntology;Slytherin"/>
     </owl:NamedIndividual>
     
 
@@ -301,6 +420,7 @@
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Lune_Lovegood">
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <rdf:type rdf:resource="&HarryPotterOntology;Ravenclaw"/>
     </owl:NamedIndividual>
     
 
@@ -318,6 +438,7 @@
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Molly_Weasley -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Molly_Weasley">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
     </owl:NamedIndividual>
@@ -387,7 +508,24 @@
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Narcisa_Black_Malfoy">
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <rdf:type rdf:resource="&HarryPotterOntology;Slytherin"/>
         <HarryPotterOntology:parentOf rdf:resource="&HarryPotterOntology;Draco_Malfoy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Nymphadora_Tonks -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Nymphadora_Tonks">
+        <rdf:type rdf:resource="&HarryPotterOntology;Hufflepuff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Padma_Patil -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Padma_Patil">
+        <rdf:type rdf:resource="&HarryPotterOntology;Ravenclaw"/>
     </owl:NamedIndividual>
     
 
@@ -401,17 +539,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Phoenix -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Phoenix"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Pomona_Sprout -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Pomona_Sprout">
+        <rdf:type rdf:resource="&HarryPotterOntology;Hufflepuff"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Ravenclaw -->
 
-    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Ravenclaw">
-        <rdf:type rdf:resource="&HarryPotterOntology;House"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Ravenclaw"/>
     
 
 
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Ronnald_Weasley -->
 
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Ronnald_Weasley">
+        <rdf:type rdf:resource="&HarryPotterOntology;Gryffindor"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
         <HarryPotterOntology:childOf rdf:resource="&HarryPotterOntology;Arthur_Weasley"/>
@@ -432,8 +583,14 @@
 
     <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Slytherin -->
 
-    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Slytherin">
-        <rdf:type rdf:resource="&HarryPotterOntology;House"/>
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Slytherin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celebtar/ontologies/2017/9/HarryPotterOntology#Sybill_Trelawney -->
+
+    <owl:NamedIndividual rdf:about="&HarryPotterOntology;Sybill_Trelawney">
+        <rdf:type rdf:resource="&HarryPotterOntology;Ravenclaw"/>
     </owl:NamedIndividual>
     
 
@@ -443,6 +600,7 @@
     <owl:NamedIndividual rdf:about="&HarryPotterOntology;Tom_Servollo_Riddle">
         <rdf:type rdf:resource="&HarryPotterOntology;Magical_Person"/>
         <rdf:type rdf:resource="&HarryPotterOntology;Person"/>
+        <rdf:type rdf:resource="&HarryPotterOntology;Slytherin"/>
     </owl:NamedIndividual>
     
 
@@ -473,93 +631,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="urn:swrl#p3">
-        <rdf:type rdf:resource="&swrl;Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#p1">
         <rdf:type rdf:resource="&swrl;Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#p2">
         <rdf:type rdf:resource="&swrl;Variable"/>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&swrl;Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;AtomList"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;AtomList"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;AtomList"/>
-                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                    </rdf:Description>
-                                </rdf:rest>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Muggle_Born"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
+    <rdf:Description rdf:about="urn:swrl#p3">
+        <rdf:type rdf:resource="&swrl;Variable"/>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
@@ -579,13 +658,6 @@
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                    </rdf:Description>
-                </rdf:first>
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -599,6 +671,14 @@
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -625,23 +705,35 @@
                                         </rdf:rest>
                                     </rdf:Description>
                                 </rdf:rest>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
-                                    </rdf:Description>
-                                </rdf:first>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                    </rdf:Description>
+                </rdf:first>
             </rdf:Description>
         </swrl:body>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Muggle"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -705,98 +797,6 @@
                 </rdf:first>
             </rdf:Description>
         </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Muggle"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&swrl;Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;AtomList"/>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;AtomList"/>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;AtomList"/>
-                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;parentOf"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                            </rdf:Description>
-                        </rdf:rest>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;parentOf"/>
-                                <swrl:argument2 rdf:resource="urn:swrl#p1"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p3"/>
-                            </rdf:Description>
-                        </rdf:first>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Squib"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
@@ -887,12 +887,78 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Half_Blood"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Muggle_Born"/>
                         <swrl:argument1 rdf:resource="urn:swrl#p1"/>
                     </rdf:Description>
                 </rdf:first>
             </rdf:Description>
         </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#p3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -906,19 +972,27 @@
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#p3"/>
-                            </rdf:Description>
-                        </rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                    </rdf:Description>
+                                </rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#p3"/>
+                                            </rdf:Description>
+                                        </rdf:first>
                                         <rdf:rest>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -933,27 +1007,152 @@
                                                 </rdf:first>
                                             </rdf:Description>
                                         </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Half_Blood"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Gryffindor"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Phoenix"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Squib"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;parentOf"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;parentOf"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#p1"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#p3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="&HarryPotterOntology;childOf"/>
+                                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="&HarryPotterOntology;Non_Magical"/>
                                                 <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#p3"/>
                                             </rdf:Description>
                                         </rdf:first>
                                     </rdf:Description>
                                 </rdf:rest>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#p1"/>
-                                    </rdf:Description>
-                                </rdf:first>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&HarryPotterOntology;Magical_Person"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p2"/>
+                    </rdf:Description>
+                </rdf:first>
             </rdf:Description>
         </swrl:body>
     </rdf:Description>
